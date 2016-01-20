@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "main": "./main.cjsx",
+  "scripts": {
+    "build": "echo 'Needs setup - run `npm run setup`'",
+    "develop": "echo 'Needs setup - run `npm run setup`'",
+    "deploy": "echo 'Needs setup - run `npm run setup`'",
+    "setup": "npm install && ./node_modules/.bin/marqueestatic setup"
+  },
+  "marquee": "RUN `npm run setup` FIRST",
+  "dependencies": {
+    "marquee-static-sdk": "^0.6.0-alpha.1",
+    "react": "^0.13.3",
+    "when": "^3.7.3"
+  }
+}
