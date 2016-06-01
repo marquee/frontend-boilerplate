@@ -20,12 +20,12 @@ assets to be hosted statically, eg on Amazon’s S3.
 
 3. (optional but highly recommended steps)
 
-    a. If using git, initialize the repository:
+    1. If using git, initialize the repository:
 
             $ git init
             $ git remote add origin <your remote repository host>
 
-    b. If equipped with [nvm](https://github.com/creationix/nvm), activate the
+    2. If equipped with [nvm](https://github.com/creationix/nvm), activate the
        environment:
 
             $ nvm use
