@@ -12,7 +12,7 @@ module.exports = React.createClass
             <EntryCover
                 level = "1"
                 title = { @props.entry.title }
-                image = { @props.entry.cover_image.w(1280) }
+                image = { @props.entry.cover_image?.w(1280) }
             />
             <EntryContent content={ @props.entry.content } />
         </Base>
