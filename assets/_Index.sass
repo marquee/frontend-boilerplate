@@ -1,0 +1,52 @@
+
+.EntryList__
+    ._Entry__
+        clear: both
+        &::after
+            display: block
+            content: ''
+            clear: both
+
+    ._Branding__
+        text-align: center
+        +respond-to-gt-small
+            display: none
+
+    ._Pagination__
+        
+
+    +respond-to-gt-small
+        ._Cover__
+            position: fixed
+            left: 0
+            top: 0
+            width: 40%
+            bottom: 0
+        ._List__
+            margin-left: 40%
+            max-width: 700px
+
+.PublicationCover
+    //min-height: 400px
+    height: 100%
+    ._Info
+        padding: $gutter
+        +respond-to-gt-small
+            max-width: 400px
+            position: absolute
+            right: 0
+            bottom: 0
+    ._Title
+        margin-bottom: 0.3em
+
+    .MarqueeBranding
+        display: none
+        +respond-to-gt-small
+            display: block
+
+.Pagination
+    ._Link
+        display : inline-block
+        width   : 50%
+        &.-next
+            text-align: right

@@ -1,0 +1,28 @@
+.Entry__
+    
+    ._Cover__
+        margin: 0 16px
+        +intrinsic_ratio_wrapper()
+        +respond-to-gt-small
+            +intrinsic_ratio_set(16/6)
+    ._Image__
+        +intrinsic_ratio_content
+
+    ._Info__
+        +column-text($flush: true)
+        padding-left: 16px
+        padding-right: 16px
+        margin-bottom: 16px
+        padding-bottom: 16px
+        border-bottom: 1px solid $palette-gallery
+
+    ._Content__
+        +gutter-bottom
+
+    .Cover
+        height: 100%
+
+    ._Branding__
+        +gutter-bottom($padding: true)
+        text-align: center
+

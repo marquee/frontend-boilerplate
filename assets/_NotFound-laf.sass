@@ -1,0 +1,26 @@
+.NotFound__
+    ._Cover__
+        background-image    : url('#{ $image-marquee_backing }')
+        background-repeat   : repeat-x
+        background-size     : contain
+    ._Content__
+        background-color    : $palette-black
+        color               : $palette-white
+        p
+            font-size           : 24px
+            font-weight         : 300
+            +respond-to-gt-extra_small
+                font-size: 30px
+            +respond-to-gt-small
+                font-size: 34px
+
+.Marquee
+    text-transform: uppercase
+    font-size: 8vh
+    line-height: 1.4
+    ._Word
+        display: inline-block
+        margin-right: 0.5em
+    ._Letter
+        position: relative
+        display: inline-block

@@ -1,0 +1,28 @@
+.EntryList__
+    ._Cover__
+    ._Items__
+        list-style-type: none
+        margin: 0
+        padding: $gutter
+    ._Pagination__
+        padding: 0 $gutter $gutter
+    ._Entry__
+        &:not(:last-child)
+            border-bottom: 1px solid $palette-gallery
+        margin-bottom: ($gutter / 2)
+        padding-bottom: ($gutter / 2)
+
+.Pagination
+    ._Link
+        @extend %NavLink
+        &:not([href])
+            opacity: 0
+            pointer-events: none
+        &.-next
+            &::after
+                @extend %NavLinkIcon
+                background-image: url('#{ $image-arrow--right }')
+        &.-previous
+            &::before
+                @extend %NavLinkIcon
+                background-image: url('#{ $image-arrow--left }')

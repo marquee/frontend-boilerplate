@@ -10,8 +10,8 @@ module.exports = React.createClass
 
         <Card className='EntryCard'>
             <EntryCover
-                image = { @props.entry.cover_image.w(800) }
-                title = { @props.entry.title }
-                link  = { @props.entry.link }
+                image = @props.entry.cover_image?.w(800)
+                title = @props.entry.title
+                link  = @props.entry.link
             />
         </Card>

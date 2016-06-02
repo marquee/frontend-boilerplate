@@ -1,0 +1,66 @@
+.Entry__
+    a
+        color: $palette-red
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+        &:visited
+            color: $palette-blood_red
+
+
+$layer-overlay  : 3
+$layer-images   : 2
+$layer-text     : 1
+
+.Block
+    box-sizing  : border-box
+    position    : relative
+
+.ImageZoomer
+    z-index: $layer-overlay
+
+.EmbedBlock
+    z-index: $layer-images
+
+.ImageBlock
+    z-index: $layer-images
+
+.TextBlock
+    z-index: $layer-text
+    font-size: 20px
+    line-height: 1.6
+    &.-role--quote
+        border-left     : 7px solid
+        color           : $palette-masala
+        font-family     : $font_stack-sans
+        font-weight     : 300
+        font-size       : 2em
+        line-height     : 1.2
+        margin-top      : 1em
+        margin-bottom   : 1em
+        padding-left    : 2em
+        padding-right   : 2em
+        width           : calc(100% - 30px)
+        max-width       : 722px
+
+    &.-role--paragraph
+        font-family: Lora, Georgia, serif
+
+h2.TextBlock
+    font-size: 28px
+
+h3.TextBlock
+    font-size: 22px
+
+.ImageBlock,
+.EmbedBlock
+    ._Caption
+        color: $palette-masala
+        font-weight: 400
+        font-size: 14px
+    ._Credit
+        font-style: italic
+
+    ._CaptionText,
+    ._Credit
+        padding: 0.25em 0.5em

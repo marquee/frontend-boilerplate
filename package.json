@@ -11,6 +11,7 @@
   "dependencies": {
     "marquee-static-sdk": "^0.7.0-alpha.3",
     "react": "^15.0.1",
+    "shiny": "^1.0.0",
     "when": "^3.7.3"
   }
 }
