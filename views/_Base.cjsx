@@ -1,3 +1,9 @@
+###
+This is the Base for views. It should not be emitted by itself, rather used as
+a wrapper around the view content. It provides the boilerplate markup for an
+HTML document.
+###
+
 React   = require 'react'
 
 {
@@ -5,13 +11,10 @@ React   = require 'react'
     Favicon
     GoogleFonts
     Asset
+    ActivateClientModules
 } = require 'marquee-static-sdk/base'
-{
-    GoogleAnalytics
-} = require 'marquee-static-sdk/base/analytics'
-
-ActivateClientModules = require 'marquee-static-sdk/base/ActivateClientModules'
-MarqueeBranding = require 'marquee-static-sdk/components/MarqueeBranding'
+{ GoogleAnalytics } = require 'marquee-static-sdk/base/analytics'
+{ MarqueeBranding } = require 'marquee-static-sdk/components'
 
 Header = React.createClass
     displayName: 'Header'

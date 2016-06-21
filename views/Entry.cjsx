@@ -19,7 +19,7 @@ module.exports = React.createClass
             title               = @props.entry.title
             publication         = @props.publication
             links = {
-                canonical: "/#{ @props.entry.slug }/"
+                canonical: @props.entry.link
             }
             client_modules = {
                 ImageBlock: []

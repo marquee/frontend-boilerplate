@@ -8,11 +8,11 @@ Base = require './_Base.cjsx'
     Summary
     Info
     Card
+    MarqueeBranding
+    DateTime
+    CoverImage
 } = require 'marquee-static-sdk/components'
 
-MarqueeBranding = require 'marquee-static-sdk/components/MarqueeBranding'
-DateTime = require 'marquee-static-sdk/components/DateTime'
-CoverImage = require 'marquee-static-sdk/components/CoverImage'
 EntryInfo = require '../components/EntryInfo.cjsx'
 { Classes } = require 'shiny'
 
