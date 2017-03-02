@@ -1,7 +1,6 @@
 React = require 'react'
 
 Base = require './_Base.cjsx'
-MarqueeBranding = require 'marquee-static-sdk/components/MarqueeBranding'
 
 
 Marquee = React.createClass
@@ -54,9 +53,8 @@ module.exports = React.createClass
                         <p className='Prompt'>
                             Check out the <a href='/'>latest stories</a> from 
                             {global.config.PUBLICATION_TITLE} or learn about 
-                            <a href='http://marquee.by'>Marquee</a>.
+                            <a href='https://proof.pub'>Proof</a>.
                         </p>
-                        <MarqueeBranding fill='#ffffff' />
                     </div>
                 </div>
             </div>

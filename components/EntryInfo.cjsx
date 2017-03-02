@@ -5,7 +5,7 @@ React = require 'react'
     Summary
     Byline
     DateTime
-} = require 'marquee-static-sdk/components'
+} = require 'proof-sdk/components'
 
 makeEntryPreview = (entry, char_count=120) ->
     preview = entry.summary

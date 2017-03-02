@@ -1,11 +1,10 @@
 React = require 'react'
 
-{ renderEntryContent } = require 'marquee-static-sdk/entry'
+{ renderEntryContent } = require 'proof-sdk/entry'
 Base = require './_Base.cjsx'
 
-{ CoverImage, Title, Summary, DateTime } = require 'marquee-static-sdk/components'
+{ CoverImage, Title, Summary, DateTime } = require 'proof-sdk/components'
 
-MarqueeBranding = require 'marquee-static-sdk/components/MarqueeBranding'
 EntryInfo = require '../components/EntryInfo.cjsx'
 module.exports = React.createClass
     displayName: 'Entry'
@@ -22,8 +21,9 @@ module.exports = React.createClass
                 canonical: @props.entry.link
             }
             client_modules = {
-                ImageBlock: []
-                ImageZoomer: []
+                GalleryBlock    : []
+                ImageBlock      : []
+                ImageZoomer     : []
             }
         >
             <div className='Entry__' data-content_id=@props.entry.id>
@@ -43,9 +43,6 @@ module.exports = React.createClass
                         if @props.entry.content?.map
                             renderEntryContent(content)
                     }
-                </div>
-                <div className='_Branding__'>
-                    <MarqueeBranding color='#000000' />
                 </div>
             </div>
         </Base>

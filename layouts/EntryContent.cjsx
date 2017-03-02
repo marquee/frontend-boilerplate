@@ -2,7 +2,7 @@ React = require 'react'
 
 {
   renderEntryContent
-} = require 'marquee-static-sdk/entry'
+} = require 'proof-sdk/entry'
 
 module.exports = React.createClass
     displayName: 'EntryContent'

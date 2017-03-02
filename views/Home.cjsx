@@ -11,7 +11,7 @@ Base = require './_Base.cjsx'
     MarqueeBranding
     DateTime
     CoverImage
-} = require 'marquee-static-sdk/components'
+} = require 'proof-sdk/components'
 
 EntryInfo = require '../components/EntryInfo.cjsx'
 { Classes } = require 'shiny'

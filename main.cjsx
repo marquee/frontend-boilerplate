@@ -1,14 +1,13 @@
 Entry   = require './views/Entry.cjsx'
 Home    = require './views/Home.cjsx'
 React   = require 'react'
-When    = require 'when'
 
 # Only necessary if providing a feed for Facebook Instant Articles.
-{ fbInstantArticlesRSSFeed } = require 'marquee-static-sdk/fb_instant_articles'
+{ fbInstantArticlesRSSFeed } = require 'proof-sdk/fb_instant_articles'
 
 module.exports = ({ api, emitFile, emitRSS, done }) ->
 
-    When.all([
+    Promise.all([
         api.entries()
     ]).then ([entries]) ->
 

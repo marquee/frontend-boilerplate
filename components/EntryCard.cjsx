@@ -1,5 +1,5 @@
 React = require 'react'
-Card  = require 'marquee-static-sdk/components/Card'
+Card  = require 'proof-sdk/components/Card'
 
 EntryCover = require '../layouts/EntryCover.cjsx'
 

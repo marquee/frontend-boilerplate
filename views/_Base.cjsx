@@ -12,9 +12,9 @@ React   = require 'react'
     GoogleFonts
     Asset
     ActivateClientModules
-} = require 'marquee-static-sdk/base'
-{ GoogleAnalytics } = require 'marquee-static-sdk/base/analytics'
-{ MarqueeBranding } = require 'marquee-static-sdk/components'
+} = require 'proof-sdk/base'
+{ GoogleAnalytics } = require 'proof-sdk/base/analytics'
+
 
 Header = React.createClass
     displayName: 'Header'
@@ -45,7 +45,7 @@ module.exports = React.createClass
 
         <html>
             <head>
-                <title>{ if @props.title then "#{ @props.title } - " else null }{global.config.PUBLICATION_TITLE} | Powered by Marquee</title>
+                <title>{ if @props.title then "#{ @props.title } - " else null }{global.config.PUBLICATION_TITLE} | Powered by Proof</title>
                 <meta charSet='utf-8' />
                 <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1.0' />
 

@@ -1,9 +1,9 @@
-# Marquee Publication Frontend Boilerplate
+# Proof Publication Frontend Boilerplate
 
-This is a boilerplate project for creating a [Marquee](http://marquee.by)-based
+This is a boilerplate project for creating a [Proof](https://proof.pub)-based
 publication frontend compiler using the
-[Marquee SDK](https://github.com/marquee/static-sdk). Such projects are
-compilers, taking in content from the Marquee API and generating markup and
+[Proof SDK](https://github.com/marquee/static-sdk). Such projects are
+compilers, taking in content from the Proof API and generating markup and
 assets to be hosted statically, eg on Amazon’s S3.
 
 
